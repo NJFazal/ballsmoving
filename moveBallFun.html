@@ -1,0 +1,70 @@
+<div id="ball1" style="
+  z-index:5;
+  position:absolute;
+  left:0px;
+  top:0px;
+  width:50px;
+  height:50px;
+  border-radius:50%;
+  background:green"></div>
+  <div id="ball2" style="
+  z-index:5;
+  position:absolute;
+  left:0px;
+  top:50px;
+  width:50px;
+  height:50px;
+  border-radius:50%;
+  background:#85dcff"></div>
+  <div id="ball3" style="
+  z-index:5;
+  position:absolute;
+  left:0px;
+  top:100px;
+  width:50px;
+  height:50px;
+  border-radius:50%;
+  background:#f30a57"></div>
+
+
+<script>
+
+    var velocity = 5;
+    var position = 0;
+    var Xmin = 0;
+    var Xmax = 300;
+    var Ymin = 0;
+    var Ymax = 300;
+    var direction = 0;
+    var reverse = false;
+    var positionX = 0;
+    var ball = document.getElementById('ball1');
+    var ball = document.getElementById('ball2');
+    var ball = document.getElementById('ball3');
+    var balls = ['ball1', 'ball2', 'ball3'];
+
+ 
+    function moveBall(){
+    ball.style.left = position + 'px';
+    console.log (position);
+    if (reverse){ 
+        positionX = positionX - velocity;
+        ball1.style.left = positionX + "px";
+        ball2.style.left = positionX + "px";
+        ball3.style.left = positionX + "px";
+      } 
+      else {
+        positionX = positionX + velocity;
+        ball1.style.left = positionX + "px";
+        ball3.style.left = positionX + "px";
+      }
+      if (positionX > Xmax || positionX === Xmin){ 
+        reverse = !reverse;
+      }
+    }
+  
+      
+    setInterval (moveBall, 10);
+
+      
+    </script>
