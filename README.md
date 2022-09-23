@@ -1,5 +1,5 @@
 # ballsmoving
-## This was my first assignment, to make balls and then make them move, then make them move back and forth
+## This was my first assignment
 Description: For this assignment, I had to make balls and then make them move, then make them move back and forth. I made this before I knew what loops are or how to use them. 
 How To Run: Simply open the HTML file.
 Roadmap to Future Improvements: For this one, I could add a loop and more bells and whistles but for now I want to save this primitive creativity like a cave painting of my coding development.
